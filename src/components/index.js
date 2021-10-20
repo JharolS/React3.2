@@ -7,18 +7,16 @@ const Profile = (props) =>{
     return (
         <div className="profile">
             <div className="user">
-                <img style={{height: 80, weight: 80}} 
+                <img style={{height: 80, weight: 80 }} 
                 alt='' src={src}/>
                 <h2>{name}</h2>
                 <p>{state}</p>  
-                <div style={{display: 'flex'}}>
-                <button className="pen"></button>
-                {additional && (
+            </div>
+            <div style={{display: 'flex'}}>
+            <button className="pen"></button>
                     <button
                     onClick={() => showAdditional(additional)}
                     >More full perfile</button>
-                )}
-                </div>
             </div>
             <div className="economic">
                 <k1>Money: {money}</k1>
